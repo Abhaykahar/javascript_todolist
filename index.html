@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRUD</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+   <section class="crud">
+    <div class="container">
+            <h1>Learn <span>CRUD</span> Operations JavaScript</h1>
+    
+               
+                    <div class="open">
+                        <h2>ToDo App</h2>
+                     <center>
+                        <table>
+                         <tr>
+                            <td></td>
+                            <td>
+                                <input type="text" id="username" placeholder="Enter name">
+                            </td>
+                         </tr>
+                         <tr>
+                            <td></td>
+                            <td>
+                                <input type="text" id="course" align="center" placeholder="Enter course">
+                            </td>
+                         </tr>
+                         <tr>
+                            <td></td>
+                            <td>
+                                <input type="hidden" id="editid">
+                                <button onclick="adduser()">Submit</button>
+                            </td>
+                         </tr>
+                        </table>
+                     </center>
+                        <br><br>
+
+                        <table width="100%" border="1" cellspacing="0" cellpadding="5">
+                            <tr>
+                                <td>User Id</td>
+                                <td>Name</td>
+                                <td>Course</td>
+                                <td>Action</td>
+                            </tr>
+                            <tbody id="record"></tbody>
+                        </table>
+
+                    </div>
+    </div>
+   </section>
+
+   <script src="./list.js"></script>
+</body>
+</html>
